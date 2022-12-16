@@ -21,6 +21,10 @@ solve() {
       RUN_CMD="deno run -A"
       EXT=".ts"
       ;;
+    "py" | "python")
+      RUN_CMD="python"
+      EXT=".py"
+      ;;
     esac
 
     echo "Running $LANG solution for day $DAY"
@@ -32,7 +36,7 @@ DAY=$2
 
 if [ -z "$LANG" ]
   then
-    echo "Which language? (go, kotlin, rust, typescript) "
+    echo "Which language? (go, kotlin, rust, typescript, python) "
     read LANG
 fi
 
@@ -60,3 +64,7 @@ solve "$LANG" "$DAY"
 ## run typescript solutions
 #deno run -A day-01/solution.ts
 #deno run -A day-02/solution.ts
+#
+## run python solutions
+#python day-01/solution.py
+#python day-02/solution.py

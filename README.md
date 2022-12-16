@@ -1,5 +1,5 @@
 # Advent of Code 2022 
-All solutions in `Rust`, `Go`, `TypeScript` and `Kotlin` 
+All solutions in `Rust`, `Go`, `TypeScript`, `Python` and `Kotlin` 
 
 ## Running
 
@@ -18,6 +18,7 @@ The first argument can be
 - `kt` or `kotlin` for Kotlin
 - `typescript` or `ts` for TypeScript
 - `rs` or `rust` for Rust
+- `py` or `python` for Rust
 
 The second argument can be a number from `01` to `25`
 
@@ -53,3 +54,8 @@ The Go files are run via Go's own `go run` process which can
 run a file like a script. 
 
 Just [install Go](https://go.dev/doc/install) via your package manager and get going.
+
+### Python
+Python scripts are run using Python 3.+ 
+
+[Install Python3](https://www.python.org/downloads/) for your OS.
