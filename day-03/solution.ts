@@ -35,6 +35,8 @@ function main() {
     prioritySum2 += priority;
   }
 
+  
+
   console.log("Part 1", prioritySum1);
   console.log("Part 2", prioritySum2);
 }

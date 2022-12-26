@@ -16,13 +16,13 @@ class Range:
   def is_overlapping(self, other: "Range") -> bool:
     overlap = False
     if self.min <= other.min and self.max >= other.min:
-        overlap = True
+      overlap = True
     if self.min <= other.max and self.max >= other.max:
-        overlap = True
+      overlap = True
     return overlap
 
 def main():
-  lines = readLines("day-04/input.txt");
+  lines = readLines("day-04/input.txt")
   duplicate_lines = 0
   overlap_lines = 0
 
@@ -30,11 +30,12 @@ def main():
     range1, range2 = map(lambda r: Range(r), line.split(","))
     if range1.is_containing(range2) or range2.is_containing(range1):
       duplicate_lines += 1
-    
+
     if range1.is_overlapping(range2) or range2.is_overlapping(range1):
       overlap_lines += 1
-    
+
   print(f"Duplicate lines: {duplicate_lines}")
   print(f"Overlap lines: {overlap_lines}")
+
 
 main()
